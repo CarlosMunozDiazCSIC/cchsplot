@@ -13,7 +13,7 @@ left_align <- function(plot_name, pieces){
 
 create_footer <- function (source_name, logo_image_path) {
   #Make the footer
-  if(logo_image_path == 'undefined') {
+  if(logo_image_path == FALSE) {
     footer <- grid::grobTree(grid::linesGrob(x = grid::unit(c(0, 1), "npc"), y = grid::unit(1.125, "npc")),
                              grid::textGrob(source_name, x = 0.005, hjust = 0, gp = grid::gpar(fontsize=11)))
   } else {
@@ -33,7 +33,7 @@ finalise_plot <- function(plot_name,
                           save_filepath=file.path(Sys.getenv("TMPDIR"), "tmp-nc.png"),
                           width_pixels=640,
                           height_pixels=450,
-                          logo_image_path='undefined') {
+                          logo_image_path = FALSE) {
 
   footer <- create_footer(source_name, logo_image_path)
 
