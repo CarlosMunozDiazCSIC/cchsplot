@@ -6,7 +6,7 @@ cchsplot_style <- function(){
       panel.grid = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
       panel.background = ggplot2::element_rect(fill = NA),
-      plot.background = ggplot2::element_blank,
+      plot.background = ggplot2::element_blank(),
 
       ##Líneas ejes
       panel.grid.major.y = ggplot2::element_line(
