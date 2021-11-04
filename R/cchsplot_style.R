@@ -3,7 +3,7 @@ cchsplot_style <- function(){
 
   ggplot2::theme_minimal() +
 
-  ggplot2::theme_replace(
+  ggplot2::theme_update(
       #grid elements
       panel.grid = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),          #strip axis ticks
