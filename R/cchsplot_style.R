@@ -6,14 +6,12 @@ cchsplot_style <- function(){
       panel.grid = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
       panel.background = ggplot2::element_rect(fill = NA),
-      plot.background = ggplot2::element_rect(
-        fill = 'blue'
-      ),
+      plot.background = ggplot2::element_blank,
 
       ##Líneas ejes
       panel.grid.major.y = ggplot2::element_line(
         size = 0.25,
-        color = 'red'
+        color = '#262626'
       ),
 
       ##Elementos propios de la visualización > Textos
