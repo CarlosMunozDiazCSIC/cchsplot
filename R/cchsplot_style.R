@@ -11,7 +11,7 @@ cchsplot_style <- function(){
       ##Líneas ejes
       panel.grid.major.y = ggplot2::element_line(
         size = 0.25,
-        color = '#262626'
+        color = 'red'
       ),
 
       ##Elementos propios de la visualización > Textos
