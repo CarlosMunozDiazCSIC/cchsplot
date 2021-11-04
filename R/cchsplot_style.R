@@ -1,7 +1,9 @@
 cchsplot_style <- function(){
   font <- "Georgia"   #assign font family up front
 
-  ggplot2::theme(
+  ggplot2::theme_minimal() +
+
+  ggplot2::theme_replace(
       #grid elements
       panel.grid = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),          #strip axis ticks
