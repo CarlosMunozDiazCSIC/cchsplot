@@ -17,7 +17,7 @@ create_footer <- function (source_name, logo_image_path) {
     footer <- grid::grobTree(grid::linesGrob(x = grid::unit(c(0, 1), "npc"), y = grid::unit(1.125, "npc")),
                              grid::textGrob(source_name, x = 0.005, hjust = 0, gp = grid::gpar(fontsize=11)))
   } else {
-    logo_image_path <- file.path(system.file("img", package = 'cchsplot'),"img/cchs.png")
+    logo_image_path <- file.path(system.file(package = 'cchsplot'),"cchs.png")
 
     footer <- grid::grobTree(grid::linesGrob(x = grid::unit(c(0, 1), "npc"), y = grid::unit(1.125, "npc")),
                              grid::textGrob(source_name, x = 0.005, hjust = 0, gp = grid::gpar(fontsize=11)),
