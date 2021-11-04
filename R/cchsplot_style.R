@@ -5,8 +5,10 @@ cchsplot_style <- function(){
       #Elementos genéricos
       panel.grid = ggplot2::element_blank(),
       axis.ticks = ggplot2::element_blank(),
-      plot.background = ggplot2::element_rect(fill = NA),
-
+      panel.background = ggplot2::element_rect(fill = NA),
+      plot.background = ggplot2::element_rect(
+        fill = 'blue'
+      ),
 
       ##Líneas ejes
       panel.grid.major.y = ggplot2::element_line(
