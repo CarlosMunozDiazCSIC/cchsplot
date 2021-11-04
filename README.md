@@ -15,10 +15,10 @@ plot <- ggplot(mpg) +
        y = "Texto Eje Y", 
        title = "Probando un título a\ndos líneas",
        subtitle = 'Subtítulo a una línea') +
-  theme_cchs()
+  cchsplot::cchsplot_style()
 
 ##Con logo
-finalise_plot(plot_name = plot,
+cchsplot::finalise_plot(plot_name = plot,
               source = "Fuente: Envejecimiento en Red",
               save_filepath = "test_1.png",
               logo_image_path = "./img/cchs.png",
@@ -26,7 +26,7 @@ finalise_plot(plot_name = plot,
               height_pixels = 450)
 
 ##Sin logo
-finalise_plot(plot_name = plot,
+cchsplot::finalise_plot(plot_name = plot,
               source = "Fuente: Envejecimiento en Red",
               save_filepath = "test_2.png",
               width_pixels = 640,
