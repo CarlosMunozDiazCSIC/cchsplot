@@ -1,19 +1,20 @@
 cchsplot_style <- function(){
   font <- "Georgia"   #assign font family up front
 
-  ggplot2::theme_minimal() +
-
-  ggplot2::theme_update(
-      #grid elements
+  ggplot2::theme(
+      #Elementos genéricos
       panel.grid = ggplot2::element_blank(),
-      axis.ticks = ggplot2::element_blank(),          #strip axis ticks
+      axis.ticks = ggplot2::element_blank(),
+      plot.background = ggplot2::element_blank(),
 
+
+      ##Líneas ejes
       panel.grid.major.y = ggplot2::element_line(
         size = 0.25,
         color = '#262626'
       ),
 
-      #text elements
+      ##Elementos propios de la visualización > Textos
       plot.title = ggplot2::element_text(             #title
         family = font,            #set font family
         size = 20,                #set font size
@@ -41,9 +42,9 @@ cchsplot_style <- function(){
         size = 10),                #font size
 
       axis.text.x = ggplot2::element_text(            #margin for axis text
-        margin=ggplot2::margin(-15, b = 7.5))
+        margin=ggplot2::margin(-15, b = 7.5)),
 
-      #since the legend often requires manual tweaking
-      #based on plot content, don't define it here
+      ##Leyenda
+      legend.position = "top"
     )
 }
