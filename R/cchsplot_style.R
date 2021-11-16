@@ -1,5 +1,5 @@
 cchsplot_style <- function(){
-  font <- ""   #assign font family up front
+  family <- "mono"   #assign font family up front
 
   ggplot2::theme(
       #Elementos genéricos
