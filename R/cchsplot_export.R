@@ -39,7 +39,7 @@ finalise_plot <- function(plot_name,
 
   #Draw your left-aligned grid
   plot_left_aligned <- left_align(plot_name, c("subtitle", "title", "caption"))
-  plot_grid <- ggpubr::ggarrange(plot_left_aligned, footer, ncol = 1, nrow = 2, heights = c(1, 0.05/(height_pixels/450)))
+  plot_grid <- ggpubr::ggarrange(plot_left_aligned, ncol = 1, nrow = 1, heights = c(1, 0.05/(height_pixels/450)))
 
   ## print(paste("Saving to", save_filepath))
   save_plot(plot_grid, width_pixels, height_pixels, save_filepath)

@@ -27,11 +27,11 @@ cchsplot_style <- function(){
       axis.text = ggplot2::element_text(size = 11),
 
       axis.text.y = ggplot2::element_text(
-        margin=ggplot2::margin(-13.5, l = 5)
+        margin=ggplot2::margin(r = 2.5, l = 5)
       ),
 
       axis.text.x = ggplot2::element_text(
-        margin=ggplot2::margin(-20.5, b = 5)),
+        margin=ggplot2::margin(t = 2.5, b = 5)),
 
       ##Strip elements
       strip.background = ggplot2::element_rect(fill="white"),
