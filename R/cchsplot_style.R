@@ -1,6 +1,4 @@
 cchsplot_style <- function(){
-  family <- "mono"   #assign font family up front
-
   ggplot2::theme(
       #Elementos genéricos
       panel.grid = ggplot2::element_blank(),
@@ -12,11 +10,8 @@ cchsplot_style <- function(){
       legend.position = "top",
       legend.text.align = 0,
       legend.background = ggplot2::element_blank(),
-      legend.title = ggplot2::element_blank(),
       legend.key = ggplot2::element_blank(),
-      legend.text = ggplot2::element_text(family=font,
-                                          size=14,
-                                          color="#222222"),
+      legend.text = ggplot2::element_text(size=14, color="#222222"),
 
       ##Líneas ejes
       panel.grid.minor = ggplot2::element_blank(),
@@ -29,11 +24,9 @@ cchsplot_style <- function(){
       plot.caption = ggplot2::element_blank(),
 
       axis.title = ggplot2::element_text(
-        family = font,            #font family
         size = 14),               #font size
 
       axis.text = ggplot2::element_text(
-        family = font,            #axis famuly
         size = 12),                #font size
 
       axis.text.y = ggplot2::element_text(
