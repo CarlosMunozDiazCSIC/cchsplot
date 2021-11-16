@@ -15,7 +15,7 @@ cchsplot_style <- function(){
 
       ##Líneas ejes
       panel.grid.minor = ggplot2::element_blank(),
-      panel.grid.major.y = ggplot2::element_line(size=0.15,color="grey96"),
+      panel.grid.major.y = ggplot2::element_line(size=0.25,color="red"),
       panel.grid.major.x = ggplot2::element_blank(),
 
       ##Elementos propios de la visualización
@@ -27,11 +27,11 @@ cchsplot_style <- function(){
       axis.text = ggplot2::element_text(size = 11),
 
       axis.text.y = ggplot2::element_text(
-        margin=ggplot2::margin(3.5, l = 7)
+        margin=ggplot2::margin(3.5, l = 5)
       ),
 
       axis.text.x = ggplot2::element_text(
-        margin=ggplot2::margin(3.5, b = 7)),
+        margin=ggplot2::margin(3.5, b = 5)),
 
       ##Strip elements
       strip.background = ggplot2::element_rect(fill="white"),
