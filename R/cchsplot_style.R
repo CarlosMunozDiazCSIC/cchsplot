@@ -23,11 +23,8 @@ cchsplot_style <- function(){
       plot.subtitle = ggplot2::element_blank(),
       plot.caption = ggplot2::element_blank(),
 
-      axis.title = ggplot2::element_text(
-        size = 13),               #font size
-
-      axis.text = ggplot2::element_text(
-        size = 11),                #font size
+      axis.title = ggplot2::element_text(size = 13),
+      axis.text = ggplot2::element_text(size = 11),
 
       axis.text.y = ggplot2::element_text(
         margin=ggplot2::margin(3.5, l = 7)
@@ -38,6 +35,6 @@ cchsplot_style <- function(){
 
       ##Strip elements
       strip.background = ggplot2::element_rect(fill="white"),
-      strip.text = ggplot2::element_text(size  = 16,  hjust = 0)
+      strip.text = ggplot2::element_text(size  = 13,  hjust = 0)
     )
 }
