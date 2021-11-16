@@ -1,5 +1,5 @@
 cchsplot_style <- function(){
-  font <- "Helvetica"   #assign font family up front
+  font <- "sans"   #assign font family up front
 
   ggplot2::theme(
       #Elementos genéricos
@@ -28,11 +28,11 @@ cchsplot_style <- function(){
         size = 12),                #font size
 
       axis.text.y = ggplot2::element_text(
-        margin=ggplot2::margin(-10, b = 5)
+        margin=ggplot2::margin(50, b = 5)
       ),
 
       axis.text.x = ggplot2::element_text(
-        margin=ggplot2::margin(-15, b = 7.5)),
+        margin=ggplot2::margin(50, b = 7.5)),
 
       ##Leyenda
       legend.position = "top"
