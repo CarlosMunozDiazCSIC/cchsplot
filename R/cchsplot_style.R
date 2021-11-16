@@ -11,11 +11,11 @@ cchsplot_style <- function(){
       legend.text.align = 0,
       legend.background = ggplot2::element_blank(),
       legend.key = ggplot2::element_blank(),
-      legend.text = ggplot2::element_text(size=13, color="#222222"),
+      legend.text = ggplot2::element_text(size=13, color="#262626"),
 
       ##Líneas ejes
       panel.grid.minor = ggplot2::element_blank(),
-      panel.grid.major.y = ggplot2::element_line(size=0.25,color="red"),
+      panel.grid.major.y = ggplot2::element_line(size=0.25,color="#d3d3d3"),
       panel.grid.major.x = ggplot2::element_blank(),
 
       ##Elementos propios de la visualización
@@ -31,7 +31,7 @@ cchsplot_style <- function(){
       ),
 
       axis.text.x = ggplot2::element_text(
-        margin=ggplot2::margin(3.5, b = 5)),
+        margin=ggplot2::margin(0.5, b = 5)),
 
       ##Strip elements
       strip.background = ggplot2::element_rect(fill="white"),
