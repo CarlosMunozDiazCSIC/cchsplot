@@ -1,5 +1,5 @@
 cchsplot_style <- function(){
-  font <- "sans"   #assign font family up front
+  font <- ""   #assign font family up front
 
   ggplot2::theme(
       #Elementos genéricos
@@ -8,13 +8,22 @@ cchsplot_style <- function(){
       panel.background = ggplot2::element_rect(fill = NA),
       plot.background = ggplot2::element_blank(),
 
-      ##Líneas ejes
-      panel.grid.major.y = ggplot2::element_line(
-        size = 0.15,
-        color = 'grey96'
-      ),
+      ##Leyenda
+      legend.position = "top",
+      legend.text.align = 0,
+      legend.background = ggplot2::element_blank(),
+      legend.title = ggplot2::element_blank(),
+      legend.key = ggplot2::element_blank(),
+      legend.text = ggplot2::element_text(family=font,
+                                          size=14,
+                                          color="#222222"),
 
-      ##Elementos propios de la visualización > Textos
+      ##Líneas ejes
+      panel.grid.minor = ggplot2::element_blank(),
+      panel.grid.major.y = ggplot2::element_line(size=0.15,color="grey96"),
+      panel.grid.major.x = ggplot2::element_blank(),
+
+      ##Elementos propios de la visualización
       plot.title = ggplot2::element_blank(),
       plot.subtitle = ggplot2::element_blank(),
       plot.caption = ggplot2::element_blank(),
@@ -34,7 +43,8 @@ cchsplot_style <- function(){
       axis.text.x = ggplot2::element_text(
         margin=ggplot2::margin(50, b = 7.5)),
 
-      ##Leyenda
-      legend.position = "top"
+      ##Strip elements
+      strip.background = ggplot2::element_rect(fill="white"),
+      strip.text = ggplot2::element_text(size  = 22,  hjust = 0)
     )
 }
