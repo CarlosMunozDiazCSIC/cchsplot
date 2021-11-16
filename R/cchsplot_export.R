@@ -1,7 +1,7 @@
 save_plot <- function (plot_grid, width, height, save_filepath) {
   grid::grid.draw(plot_grid)
   #save it
-  ggplot2::ggsave(filename = save_filepath, plot=plot_grid, width=(width/72), height=(height/72), bg="#fff", dpi = 300)
+  ggplot2::ggsave(filename = save_filepath, plot=plot_grid, width=(width/72), height=(height/72), bg="white", dpi = 300)
 }
 
 left_align <- function(plot_name, pieces){

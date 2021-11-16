@@ -31,7 +31,7 @@ cchsplot_style <- function(){
       ),
 
       axis.text.x = ggplot2::element_text(
-        margin=ggplot2::margin(t = 2.5, b = 5)),
+        margin=ggplot2::margin(t = -2.5, b = 5)),
 
       ##Strip elements
       strip.background = ggplot2::element_rect(fill="white"),
