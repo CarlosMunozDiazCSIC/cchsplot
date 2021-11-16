@@ -15,23 +15,11 @@ cchsplot_style <- function(){
       ),
 
       ##Elementos propios de la visualización > Textos
-      plot.title = ggplot2::element_text(             #title
-        family = font,            #set font family
-        size = 20,                #set font size
-        face = 'bold',            #bold typeface
-        hjust = 0,                #left align
-        vjust = 1),               #raise slightly
+      plot.title = ggplot2::element_blank(),               #raise slightly
 
-      plot.subtitle = ggplot2::element_text(          #subtitle
-        family = font,            #font family
-        size = 16,
-        hjust = 0,
-        vjust = 0),               #font size
+      plot.subtitle = ggplot2::element_blank(),               #font size
 
-      plot.caption = ggplot2::element_text(           #caption
-        family = font,            #font family
-        size = 11,                 #font size
-        hjust = 1),               #right align
+      plot.caption = ggplot2::element_blank(),               #right align
 
       axis.title = ggplot2::element_text(             #axis titles
         family = font,            #font family

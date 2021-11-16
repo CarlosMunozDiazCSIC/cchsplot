@@ -1,7 +1,7 @@
 save_plot <- function (plot_grid, width, height, save_filepath) {
   grid::grid.draw(plot_grid)
   #save it
-  ggplot2::ggsave(filename = save_filepath, plot=plot_grid, width=(width/72), height=(height/72), bg="#edf2f2", dpi = 300)
+  ggplot2::ggsave(filename = save_filepath, plot=plot_grid, width=(width/72), height=(height/72), bg="#fff", dpi = 300)
 }
 
 left_align <- function(plot_name, pieces){
@@ -31,11 +31,11 @@ create_footer <- function (source_name, logo_image_path) {
 finalise_plot <- function(plot_name,
                           source_name,
                           save_filepath=file.path(Sys.getenv("TMPDIR"), "tmp-nc.png"),
-                          width_pixels=640,
+                          width_pixels=650,
                           height_pixels=450,
                           logo_image_path = FALSE) {
 
-  footer <- create_footer(source_name, logo_image_path)
+  #footer <- create_footer(source_name, logo_image_path)
 
   #Draw your left-aligned grid
   plot_left_aligned <- left_align(plot_name, c("subtitle", "title", "caption"))
